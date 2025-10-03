@@ -36,13 +36,13 @@ ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
 # Examples
 
 # Convert Odometry to TF
-ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
-  /odom nav_msgs/msg/Odometry odom base_link
+ros2 run dynamic_transform_publisher dynamic_transform_publisher_node /odom nav_msgs/msg/Odometry odom base_link
+
 
 # Convert PoseStamped to TF
-ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
-  /pose geometry_msgs/msg/PoseStamped map base_link
+ros2 run dynamic_transform_publisher dynamic_transform_publisher_node /pose geometry_msgs/msg/PoseStamped map base_link
+
 
 # Pass through TransformStamped
-ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
-  /tf_in geometry_msgs/msg/TransformStamped auto auto
+ros2 run dynamic_transform_publisher dynamic_transform_publisher_node /tf_in geometry_msgs/msg/TransformStamped auto auto
+
