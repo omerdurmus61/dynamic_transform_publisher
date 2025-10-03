@@ -31,10 +31,10 @@ source install/setup.bash
 # Usage
 
 ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
-  <topic> <msg_type> <parent_frame|auto> <child_frame|auto>
-Examples
-bash
-Kodu kopyala
+<topic_name> <msg_type> <parent_frame|auto> <child_frame|auto>
+  
+# Examples
+
 # Convert Odometry to TF
 ros2 run dynamic_transform_publisher dynamic_transform_publisher_node \
   /odom nav_msgs/msg/Odometry odom base_link
